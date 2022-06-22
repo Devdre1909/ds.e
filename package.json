@@ -1,0 +1,23 @@
+{
+  "name": "@ds.e/core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Adegoke Temitope <adegoketemitope1909@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "yarn lerna run build",
+    "cleanNodeModules": "rm -rf ./**/node_modules"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/normalize-scss"
+    ]
+  },
+  "devDependencies": {
+    "lerna": "^5.1.4"
+  }
+}
